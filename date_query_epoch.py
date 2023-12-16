@@ -12,11 +12,8 @@ def unixDay(time = time.time()):
   end_of_day = start_of_day + 86399
   return start_of_day
 
-def userQuery():
+def pastDate():
   userQuery = input('\nEnter a + or -, years as int: ')
-  return userQuery
-
-def pastDate(userQuery):
   epochYearSeconds =  31556926
   splitter = userQuery.split(', ')
   currentEpoch = unixDay()
@@ -33,4 +30,4 @@ def pastDate(userQuery):
   realDate = time.strftime("%m-%d-%Y", convertDate)
   return realDate
   
-print(pastDate(userQuery()))
+print(pastDate())
