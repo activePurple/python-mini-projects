@@ -12,10 +12,6 @@ def unixDay(time = time.time()):
   end_of_day = start_of_day + 86399
   return start_of_day
 
-def getUnixTime(queryTime):
-    for i in range(len(queryTime)):
-        return time.mktime(time.strptime(queryTime[i], "%m %d %Y %H:%M:%S")) 
-
 def userQuery():
   userQuery = input('\nEnter a + or -, years as int: ')
   return userQuery
