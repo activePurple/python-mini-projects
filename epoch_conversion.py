@@ -12,6 +12,12 @@ def unixDay(time = time.time()):
 def getUnixTime(queryTime):
     for i in range(len(queryTime)):
         return time.mktime(time.strptime(queryTime[i], "%m %d %Y %H:%M:%S"))
+    
+    
+# Daylight saving time always starts on the second Sunday in March 
+# and ends on the first Sunday in November for the United States    
+def daylightSavingsUs():
+    pass
 
 # User input and delimiter
 queryTime = input('\nEnter time as DD MM YYYY HH:MM:SS: ')
